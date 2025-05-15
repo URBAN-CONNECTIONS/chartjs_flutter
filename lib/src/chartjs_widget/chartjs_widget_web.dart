@@ -1,7 +1,7 @@
 import 'dart:async';
 
 // ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html;
+import 'package:universal_html/html.dart' as html;
 import 'dart:ui_web' as ui_web;
 
 import 'package:flutter/material.dart';
@@ -42,12 +42,12 @@ class _ChartjsWidgetState extends State<ChartjsWidget> {
 
     ui_web.platformViewRegistry.registerViewFactory(
       componentName,
-      (int viewId, {Object? params}) => html.IFrameElement(),
+          (int viewId, {Object? params}) => html.IFrameElement(),
     );
 
     // Listen for messages from the HTML iframe.
     listenMessage = html.window.onMessage.listen(
-      (event) => onEvent(event.data),
+          (event) => onEvent(event.data),
     );
 
     super.initState();
@@ -77,7 +77,7 @@ class _ChartjsWidgetState extends State<ChartjsWidget> {
 
         // Listen for the load event to create the chart.
         element.onLoad.listen(
-          (event) => createChart(),
+              (event) => createChart(),
         );
       },
     );
