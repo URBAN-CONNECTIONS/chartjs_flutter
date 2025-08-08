@@ -62,11 +62,7 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - packages/chartjs_flutter/assets/html/index.html
-    - packages/chartjs_flutter/assets/html/script.js
-    - packages/chartjs_flutter/assets/html/style.css
-
+  # assets:
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
