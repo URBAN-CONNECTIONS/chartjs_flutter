@@ -1,6 +1,6 @@
 name: chartjs_flutter
 description: "Flutter plugin to use chart.js"
-version: 1.0.2
+version: 1.0.3
 repository: https://github.com/URBAN-CONNECTIONS/chartjs_flutter
 
 environment:
@@ -16,6 +16,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+assets:
+  - lib/assets/html/index.html
+  - lib/assets/html/script.js
+  - lib/assets/html/style.css
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

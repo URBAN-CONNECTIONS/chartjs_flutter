@@ -71,7 +71,7 @@ class _ChartjsWidgetState extends State<ChartjsWidget> {
         element
           ..style.width = '100%'
           ..style.height = '100%'
-          ..src = 'packages/chartjs_flutter/assets/html/index.html'
+          ..src = 'assets/packages/chartjs_flutter/assets/html/index.html'
           ..style.border = 'none'
           ..id = componentName;
 
